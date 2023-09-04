@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <section class="main_body">
+      <section class="side_panel bg-black">
+        <div class="logo_container">
+          <img
+            src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png"
+            alt="logo"
+          />
+        </div>
+
+        <div class="home_buttons">
+          <div class="home_button ql">
+            <i class="fa-solid fa-house" style="color: #ffffff"></i>
+            <span>Home</span>
+          </div>
+          <div class="search_button ql">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+            <span>Search</span>
+          </div>
+          <div class="library_button ql">
+            <i class="fa-solid fa-lines-leaning" style="color: #ffffff"></i>
+            <span>Your Library</span>
+          </div>
+        </div>
+
+        <div class="mid_links">
+          <div class="liked_song ql">
+            <img
+              src="https://misc.scdn.co/liked-songs/liked-songs-64.png"
+              alt="liked img"
+            />
+            <span>Liked Songs</span>
+          </div>
+          <div class="playlist_1 ql">
+            <img
+              src="https://mosaic.scdn.co/60/ab67616d00001e0246d0bf5918485943f3edc4e7ab67616d00001e02775d1e288c04237d896e8357ab67616d00001e02df934f4de5f8dd46f8d75f5fab67616d00001e02e2e352d89826aef6dbd5ff8f"
+              alt="Sunny Morning"
+            />
+            <span>Sunny Mornings</span>
+          </div>
+          <div class="playlist_2 ql">
+            <img
+              src="https://mosaic.scdn.co/60/ab67616d00001e0254eab2e4aa8b8706b6b526d2ab67616d00001e028d07544fddf5b7d9a1e41554ab67616d00001e02aedf6f748f73e59cf25bcf25ab67616d00001e02b67b95e97c6c8f4c7362dcaf"
+              alt="Raining.."
+            />
+            <span>Beast Mode</span>
+          </div>
+        </div>
+
+        <div class="btm_links">
+          <p>Trending</p>
+          <p>Daily Mix</p>
+          <p>Punjabi</p>
+          <p>English</p>
+          <p>Discover Weekly</p>
+        </div>
+      </section>
+
+      <section class="display_window dw_playlist">
+        <div class="header">
+          <div class="nav_btn">
+            <div class="nav_left">
+              <i class="fa-solid fa-angle-left" style="color: #ffffff"></i>
+            </div>
+            <div class="nav_right">
+              <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
+            </div>
+          </div>
+          <div class="profile_banner">
+            <img
+              src="https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=2411757675777560&amp;height=50&amp;width=50&amp;ext=1696223125&amp;hash=AeRczdBPP36dMAY8eeY"
+              alt="Shubham"
+            />
+            <span class="fw-bold">Shubham</span>
+            <i
+              class="fa-solid fa-sort-down ms-2 me-3"
+              style="color: #ffffff"
+            ></i>
+          </div>
+        </div>
+
+        <div class="head_banner d-flex">
+          <img
+            src="https://mosaic.scdn.co/300/ab67616d00001e0246d0bf5918485943f3edc4e7ab67616d00001e02775d1e288c04237d896e8357ab67616d00001e02df934f4de5f8dd46f8d75f5fab67616d00001e02e2e352d89826aef6dbd5ff8f"
+            alt="Sunny Morning"
+          />
+          <div class="playlist_heading">
+            <p>Playlist</p>
+            <p class="big_heading">Sunny Morning</p>
+            <p>Spotify . 18 Songs</p>
+          </div>
+        </div>
+
+        <div class="playlist">
+          <button class="btn play_btn">
+            <i class="fa-solid fa-play" style="color: #000000"></i>
+          </button>
+          <i class="fa-solid fa-ellipsis" style="color: #a9a9a9"></i>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Album</th>
+              <th>Date Added</th>
+              <th>
+                <i class="fa-regular fa-clock" style="color: #c0c0c0"></i>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <div class="song_card">
+                        <img aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67616d00004851e2e352d89826aef6dbd5ff8f" alt="" class="mMx2LUixlnN_Fu45JpFB rkw8BWQi3miXqtlJhKg0 Yn2Ei5QZn19gria6LjZj" width="40" height="40">
+                        <div>
+                            <p class="name">Sunflower: SpiderMan into the..</p>
+                            <p class="artist">Post Menlo, Swae Lee</p>
+                        </div>
+                    </div>
+                </td>
+                <td>SpiderMan: Into the Spider-verse..</td>
+                <td>Jun 23, 2023
+                    <i class="fa-solid fa-heart" style="color: #00ff80;"></i>
+                </td>
+                <td>2:38</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <div class="song_card">
+                        <img aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67616d00004851e2e352d89826aef6dbd5ff8f" alt="" class="mMx2LUixlnN_Fu45JpFB rkw8BWQi3miXqtlJhKg0 Yn2Ei5QZn19gria6LjZj" width="40" height="40">
+                        <div>
+                            <p class="name">Sunflower: SpiderMan into the..</p>
+                            <p class="artist">Post Menlo, Swae Lee</p>
+                        </div>
+                    </div>
+                </td>
+                <td>SpiderMan: Into the Spider-verse..</td>
+                <td>Jun 23, 2023
+                    <i class="fa-solid fa-heart" style="color: #00ff80;"></i>
+                </td>
+                <td>2:38</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <div class="song_card">
+                        <img aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67616d00004851e2e352d89826aef6dbd5ff8f" alt="" class="mMx2LUixlnN_Fu45JpFB rkw8BWQi3miXqtlJhKg0 Yn2Ei5QZn19gria6LjZj" width="40" height="40">
+                        <div>
+                            <p class="name">Sunflower: SpiderMan into the..</p>
+                            <p class="artist">Post Menlo, Swae Lee</p>
+                        </div>
+                    </div>
+                </td>
+                <td>SpiderMan: Into the Spider-verse..</td>
+                <td>Jun 23, 2023
+                    <i class="fa-solid fa-heart" style="color: #00ff80;"></i>
+                </td>
+                <td>2:38</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <div class="song_card">
+                        <img aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67616d00004851e2e352d89826aef6dbd5ff8f" alt="" class="mMx2LUixlnN_Fu45JpFB rkw8BWQi3miXqtlJhKg0 Yn2Ei5QZn19gria6LjZj" width="40" height="40">
+                        <div>
+                            <p class="name">Sunflower: SpiderMan into the..</p>
+                            <p class="artist">Post Menlo, Swae Lee</p>
+                        </div>
+                    </div>
+                </td>
+                <td>SpiderMan: Into the Spider-verse..</td>
+                <td>Jun 23, 2023
+                    <i class="fa-solid fa-heart" style="color: #00ff80;"></i>
+                </td>
+                <td>2:38</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <div class="song_card">
+                        <img aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67616d00004851e2e352d89826aef6dbd5ff8f" alt="" class="mMx2LUixlnN_Fu45JpFB rkw8BWQi3miXqtlJhKg0 Yn2Ei5QZn19gria6LjZj" width="40" height="40">
+                        <div>
+                            <p class="name">Sunflower: SpiderMan into the..</p>
+                            <p class="artist">Post Menlo, Swae Lee</p>
+                        </div>
+                    </div>
+                </td>
+                <td>SpiderMan: Into the Spider-verse..</td>
+                <td>Jun 23, 2023
+                    <i class="fa-solid fa-heart" style="color: #00ff80;"></i>
+                </td>
+                <td>2:38</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <div class="song_card">
+                        <img aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67616d00004851e2e352d89826aef6dbd5ff8f" alt="" class="mMx2LUixlnN_Fu45JpFB rkw8BWQi3miXqtlJhKg0 Yn2Ei5QZn19gria6LjZj" width="40" height="40">
+                        <div>
+                            <p class="name">Sunflower: SpiderMan into the..</p>
+                            <p class="artist">Post Menlo, Swae Lee</p>
+                        </div>
+                    </div>
+                </td>
+                <td>SpiderMan: Into the Spider-verse..</td>
+                <td>Jun 23, 2023
+                    <i class="fa-solid fa-heart" style="color: #00ff80;"></i>
+                </td>
+                <td>2:38</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <section class="player">
+      <div class="cur_playing">
+        <img
+          src="https://i.scdn.co/image/ab67616d0000485108074b6de9b696b218c4b57a"
+          alt=""
+        />
+        <div class="name_cont ms-3">
+          <p class="fw-bold fs-6 mb-0 mt-3">Die For You</p>
+          <p class="song_alb mt-0">VALORANT, Grabbitz</p>
+        </div>
+        <i class="fa-solid fa-heart ms-3" style="color: #00e339"></i>
+      </div>
+      <div class="controller">
+        <div class="control_btns mb-2">
+          <i class="fa-solid fa-shuffle" style="color: #ffffff"></i>
+          <i class="fa-solid fa-backward-step" style="color: #ffffff"></i>
+          <button class="btn play_btn">
+            <i class="fa-solid fa-play" style="color: #000000"></i>
+          </button>
+          <i class="fa-solid fa-forward-step" style="color: #ffffff"></i>
+          <i class="fa-solid fa-repeat" style="color: #ffffff"></i>
+        </div>
+        <div class="progress_bar">
+          <p class="mb-0">1:15</p>
+          <div
+            style="
+              width: 500px;
+              height: 3px;
+              background-color: gray;
+              margin-top: 0px;
+            "
+          >
+            <div
+              style="height: 100%; width: 30%; background-color: white"
+            ></div>
+          </div>
+          <p class="mb-0">2:10</p>
+        </div>
+      </div>
+      <div class="toggles">
+        <i class="fa-solid fa-microphone-lines"></i>
+        <i class="fa-solid fa-layer-group"></i>
+        <i class="fa-solid fa-laptop"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <div style="width: 70px; height: 3px; background-color: grey">
+          <div style="height: 100%; width: 70%; background-color: white"></div>
+        </div>
+        <i class="fa-solid fa-maximize"></i>
+      </div>
+    </section>
+  </body>
+</html>
